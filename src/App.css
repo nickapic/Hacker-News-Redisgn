@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+html{
+  font-size: 67.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Poppins', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+.header_title{
+  margin-left: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header_title strong{
+  font-weight: 700;
+  font-style: italic;
+}
+
+.main-container{
+  margin: 10rem 4rem 2rem 4rem ;
+}
+.content-heading{
+  text-transform: uppercase;
+  font-size:1.5rem
+}
+.article-box{
+  background-color: #111111;
   color: white;
+  margin: 2rem 0;
+  padding: 2rem 4rem;
 }
-
-.App-link {
-  color: #61dafb;
+.article-title{
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p{
+  margin:0.35rem 0;
+}
+a{
+  margin-top: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (max-width: 800px) { 
+  html{
+    font-size: 60%;
   }
-  to {
-    transform: rotate(360deg);
+  .header{
+    justify-content: center;
   }
-}
+  .header_title{
+    margin-left:0 ;
+  }
+ }
+ @media (max-width: 500px) { 
+  html{
+    font-size: 50%;
+  }
+ }
+ @media (min-width: 1800px) { 
+  html{
+    font-size: 70%;
+  }
+ }
+ @media (min-width: 2000px) { 
+  html{
+    font-size: 80%;
+  }
+ }
